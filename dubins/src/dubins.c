@@ -23,6 +23,10 @@
 #define _USE_MATH_DEFINES
 #endif
 #include <math.h>
+/* Create definition of PI if math.h didn't define it */
+#ifndef M_PI
+    #define M_PI 3.14159265358979323846
+#endif
 #include "dubins.h"
 
 #define EPSILON (10e-10)
